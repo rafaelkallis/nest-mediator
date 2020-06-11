@@ -68,6 +68,9 @@ describe(Mediator.name, () => {
         expect(actualReturn).toBe(myRequestHandlerReturn);
     });
 
+    test.todo('when no request handler should throw exception');
+    test.todo('when multiple request handlers in DI container should throw exception');
+
     test('should handle events', async () => {
         const event = new MyEvent();
         await mediator.emit(event);
